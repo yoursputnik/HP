@@ -300,6 +300,14 @@ small p:first-child {
   margin-bottom: 1rem;
 }
 
+.cotact_main {
+  margin-top: 30px;
+}
+
+.contact_footer {
+  margin-top: 0;
+}
+
 @media screen and (min-width:761px) {
   .sp_icon_nav , .select_info {
     display: none;
