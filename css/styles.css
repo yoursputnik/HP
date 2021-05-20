@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(250, 250, 250);
 }
 
 header {
@@ -10,11 +11,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: rgb(250,250,250);
 }
 
 nav a:hover {
-  color: gray;
+  color: rgb(190, 190, 190);
 }
 
 .icon_nav img:hover {
@@ -60,16 +61,18 @@ nav li {
 
 nav ul li a {
   text-decoration: none;
-  color:black;
+  color:#222;
+  font-size: 12px;
 }
 
 span {
-  color:gray;
+  color:rgb(190, 190, 190);
+  font-size: 12px;
 }
 
 .icon_nav ul li img {
   display: block;
-  height: 50px;
+  height: 40px;
   padding-left: 10px;
 }
 
@@ -89,8 +92,8 @@ span {
 }
 
 .pc_info th {
-  background: #000;
-  color:white;
+  background: #222;
+  color:rgb(250,250,250);
   text-align: center;
   line-height: 30px;
   letter-spacing: 5px;
@@ -104,6 +107,7 @@ span {
   padding: 15px 0;
   padding-right: 15px;
   font-size: small;
+  line-height: 1.5;
 }
 
 table a {
@@ -121,16 +125,16 @@ table a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 800px;
   margin-bottom: 40px;
 }
 
 .band_name {
   text-align: center;
   line-height: 700px;
-  font-size: 60px;
-  color:pink;
+  font-size: 40px;
+  color:rgb(250, 250, 250);
   animation: fade-in 2s;
+  letter-spacing: 5px;
 }
 
 @keyframes fade-in {
@@ -149,7 +153,7 @@ table a:hover {
 
 /* footer */
 footer {
-  background: #000;
+  background: #222;
   width: 100%;
   height: 70px;
   text-align: center;
@@ -158,7 +162,7 @@ footer {
 }
 
 small {
-  color:white;
+  color:rgb(250,250,250);
   font-size: small;
 }
 
@@ -172,11 +176,15 @@ small p:first-child {
   padding-top: 80px;
 }
 .content h1 {
-
-  border-left: black 5px solid;
+  border-left: #222 5px solid;
   padding-left: 3%;
   margin-left: 20px;
+  line-height: 1.5;
 }
+
+.content h2 {
+  padding-bottom: 10px;
+} 
 
 .content p, .content h2 {
   margin-left: 5%;
@@ -187,8 +195,6 @@ small p:first-child {
 .content img {
   width: 90%;
   margin: 20px 5% 20px 5%;
-  height: 500px;
-  
 }
 
 .live_content {
@@ -212,6 +218,7 @@ small p:first-child {
 .bio_main p {
   padding: .5rem 0;
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .bio_main p:nth-of-type(1), .bio_main p:nth-of-type(3){
@@ -219,8 +226,9 @@ small p:first-child {
 }
 
 .bio_border {
-  border: gray dotted 1px;
-  margin: 1rem 0;
+  border-bottom: rgb(190, 190, 190) dotted 1px;
+  margin: 16px 0;
+  padding-bottom: 20px;
 }
 
 .bio_nav ul {
@@ -229,13 +237,17 @@ small p:first-child {
 }
 
 .bio_nav img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   padding: .5rem;
 }
 
 .bio_nav a:hover {
   opacity: .7;
+}
+
+.bio_ruby {
+  padding-left: 10px;
 }
 
 .disco_content {
@@ -257,18 +269,19 @@ small p:first-child {
 }
 
 .disco_box h1 {
-  border-left: black 5px solid;
+  border-left: #222 5px solid;
   padding-left: 3%;
 }
 
 .disco_box h2 {
-  font-size: 14px;
+  font-size: 13px;
   padding-bottom: 1rem;
 }
 
 .disco_desc {
   font-size: 15px;
-  line-height: 1.3rem;
+  line-height: 1.5;
+  font-size: 13px;
 }
 
 .disco_desc a {
@@ -280,11 +293,11 @@ small p:first-child {
 }
 
 .disco_desc p:nth-of-type(2) {
-  padding-top: 1rem;
+  padding-top: 16px;
 }
 
 .disco_desc p:nth-of-type(3) {
-  padding-top: .5rem;
+  padding-top: 8px;
 }
 
 .songs p:nth-of-type(even) {
@@ -292,12 +305,13 @@ small p:first-child {
 }
 
 .songs p:nth-of-type(n+2) {
-  padding-left: .5rem;
+  padding-left: 8px;
 }
 
 .songs {
-  line-height: 2rem;
+  line-height: 2;
   margin-bottom: 1rem;
+  font-size: 13px;
 }
 
 .contact_main {
@@ -320,8 +334,6 @@ small p:first-child {
   .pc_nav, .icon_nav, .pc_main, header {
     display: none;
   }
-
-
 
   #hamburger {
     opacity: 0;
@@ -354,9 +366,9 @@ small p:first-child {
     position: absolute;
     left: 0;
     width: 70%;
-    height: 0.2rem;
+    height: 2px;
     border-radius: 5px;
-    background: #FFF;
+    background: rgb(250,250,250);
     content:"";
     transition: all .5s;
   }
@@ -366,7 +378,7 @@ small p:first-child {
   }
   label .burger .bar {
     top: 35%;
-    height: 0.15rem;
+    height: 2px;
   }
   label .burger::after {
     bottom: 20%;
@@ -374,7 +386,7 @@ small p:first-child {
   }
 
   .black_box {
-    background: #000;
+    background: #222;
     width: 3rem;
     height: 3rem;
     position: fixed;
@@ -415,7 +427,7 @@ small p:first-child {
 
   #menu a {
     text-decoration: none;
-    color:white;
+    color:rgb(250,250,250);
     margin-bottom: 2rem;
     font-weight: bold;
     position: relative;
@@ -435,8 +447,8 @@ small p:first-child {
   }
 
   .sp_icon_nav img {
-    height: 50px;
-    margin-right: 1rem;
+    height: 40px;
+    margin-right: 16px;
   }
 
   .sp_icon_nav ul {
@@ -450,7 +462,7 @@ small p:first-child {
     box-sizing: border-box;
     display: flex;
     text-align: center;
-    border: black solid 1px;
+    border: #222 solid 1px;
   }
 
   #select1, #select2 {
@@ -468,15 +480,15 @@ small p:first-child {
 
   #select1:checked ~ .select_box .select_news,
   #select2:checked ~ .select_box .select_live {
-    background: #000;
-    color: white;
+    background: #222;
+    color: rgb(250,250,250);
     transition: .5s;
   }
 
   .border {
     border: dotted rgb(190, 188, 188) 1px;
     width: 95%;
-    margin: 10px auto;
+    margin: 20px auto;
   }
 
   .sp_news , .sp_live, .sp_twitter {
@@ -500,8 +512,8 @@ small p:first-child {
   }
 
   .twitter_title {
-    background: #000;
-    color: white;
+    background: #222;
+    color: rgb(250,250,250);
     padding: .7rem 0;
     letter-spacing: 3px;
   }
@@ -516,12 +528,16 @@ small p:first-child {
   }
 
    .center_name {
-    font-size: 3rem;
-    color: pink;
+    font-size: 30px;
+    color: rgb(250,250,250);
     animation: fade-in 2s;
     position: absolute;
     z-index: 1;
     top: 30%;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   @keyframes fade-in {
@@ -556,7 +572,7 @@ small p:first-child {
   }
 
   .live_title p {
-    border-bottom: black solid 1px;
+    border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 2.8rem;
     padding: 1em 0 .5em 0;
@@ -570,7 +586,7 @@ small p:first-child {
   }
 
   .bio_title p {
-    border-bottom: black solid 1px;
+    border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 8rem;
     padding: 1em 0 .5em 0;
@@ -585,7 +601,7 @@ small p:first-child {
   }
 
   .disco_title p {
-    border-bottom: black solid 1px;
+    border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 10rem;
     padding: 1em 0 .5em 0;
