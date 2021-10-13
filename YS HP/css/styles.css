@@ -11,7 +11,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgb(250,250,250);
+  background: rgb(250, 250, 250);
 }
 
 nav a:hover {
@@ -19,7 +19,7 @@ nav a:hover {
 }
 
 .icon_nav img:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .icon_nav {
@@ -31,14 +31,16 @@ header nav ul {
   padding: 0;
 }
 
-nav ul , .icon_nav ul , .icon_nav ul li a {
+nav ul,
+.icon_nav ul,
+.icon_nav ul li a {
   display: flex;
 }
 
 nav ul {
   margin: 0;
   position: absolute;
-  top:1.7rem;
+  top: 1.7rem;
 }
 
 nav li {
@@ -46,27 +48,26 @@ nav li {
   padding-right: 1.5rem;
   font-weight: bold;
   font-size: 16px;
-  
 }
 
- .icon_nav ul {
+.icon_nav ul {
   position: relative;
   right: 40px;
   top: 15px;
- }
+}
 
-.icon_nav ul li{
+.icon_nav ul li {
   list-style: none;
 }
 
 nav ul li a {
   text-decoration: none;
-  color:#222;
+  color: #222;
   font-size: 12px;
 }
 
 span {
-  color:rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
   font-size: 12px;
 }
 
@@ -93,17 +94,20 @@ span {
 
 .pc_info th {
   background: #222;
-  color:rgb(250,250,250);
+  color: rgb(250, 250, 250);
   text-align: center;
   line-height: 30px;
   letter-spacing: 5px;
 }
 
-.pc_twitter table , .pc_news table , .pc_live table{
+.pc_twitter table,
+.pc_news table,
+.pc_live table {
   width: 100%;
 }
 
-.pc_news table td , .pc_live table td {
+.pc_news table td,
+.pc_live table td {
   padding: 15px 0;
   padding-right: 15px;
   font-size: small;
@@ -111,15 +115,13 @@ span {
 }
 
 table a {
-  color:rgb(247, 158, 176);
+  color: rgb(247, 158, 176);
   line-height: 1.5;
 }
 
 table a:hover {
   text-decoration: none;
 }
-
-
 
 #BG_pc {
   background-image: url(../img/TOP.JPG);
@@ -133,7 +135,7 @@ table a:hover {
   text-align: center;
   line-height: 700px;
   font-size: 40px;
-  color:rgb(250, 250, 250);
+  color: rgb(250, 250, 250);
   animation: fade-in 2s;
   letter-spacing: 5px;
 }
@@ -150,8 +152,6 @@ table a:hover {
   }
 }
 
-
-
 /* footer */
 footer {
   background: #222;
@@ -163,7 +163,7 @@ footer {
 }
 
 small {
-  color:rgb(250,250,250);
+  color: rgb(250, 250, 250);
   font-size: small;
 }
 
@@ -185,9 +185,10 @@ small p:first-child {
 
 .content h2 {
   padding-bottom: 10px;
-} 
+}
 
-.content p, .content h2 {
+.content p,
+.content h2 {
   margin-left: 5%;
   margin-bottom: 5px;
   font-size: 12px;
@@ -217,12 +218,13 @@ small p:first-child {
 }
 
 .bio_main p {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-size: 12px;
   line-height: 1.5;
 }
 
-.bio_main p:nth-of-type(1), .bio_main p:nth-of-type(3){
+.bio_main p:nth-of-type(1),
+.bio_main p:nth-of-type(3) {
   font-weight: bold;
 }
 
@@ -240,11 +242,11 @@ small p:first-child {
 .bio_nav img {
   height: 40px;
   width: 40px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .bio_nav a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .bio_ruby {
@@ -305,7 +307,7 @@ small p:first-child {
   background: rgb(212, 212, 212);
 }
 
-.songs p:nth-of-type(n+2) {
+.songs p:nth-of-type(n + 2) {
   padding-left: 8px;
 }
 
@@ -323,20 +325,36 @@ small p:first-child {
   margin-top: 0;
 }
 
-@media screen and (min-width:761px) {
-  .sp_icon_nav , .select_info {
+@media screen and (min-width: 761px) {
+  .sp_icon_nav,
+  .select_info {
     display: none;
   }
 }
 
-/* スマートフォン */
-@media screen and (max-width:760px) {
+/* フェードイン */
 
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 45px);
+  transition: all 700ms;
+}
+
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* スマートフォン */
+@media screen and (max-width: 760px) {
   table a {
     line-height: 1.5;
   }
-  
-  .pc_nav, .icon_nav, .pc_main, header {
+
+  .pc_nav,
+  .icon_nav,
+  .pc_main,
+  header {
     display: none;
   }
 
@@ -373,9 +391,9 @@ small p:first-child {
     width: 70%;
     height: 2px;
     border-radius: 5px;
-    background: rgb(250,250,250);
-    content:"";
-    transition: all .5s;
+    background: rgb(250, 250, 250);
+    content: "";
+    transition: all 0.5s;
   }
   label .burger::before {
     top: 0;
@@ -398,7 +416,6 @@ small p:first-child {
     z-index: 200;
     top: 0;
     right: 0;
-
   }
 
   #menu {
@@ -411,7 +428,7 @@ small p:first-child {
     justify-content: center;
     align-items: flex-start;
     transform: translateX(300%);
-    transition: transform .5s;
+    transition: transform 0.5s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     padding-left: 3rem;
   }
@@ -425,14 +442,14 @@ small p:first-child {
     width: 40rem;
     height: 100vh;
     background: rgb(252, 194, 204);
-    content:"";
+    content: "";
     transform: translateX(100%);
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
 
   #menu a {
     text-decoration: none;
-    color:rgb(250,250,250);
+    color: rgb(250, 250, 250);
     margin-bottom: 2rem;
     font-weight: bold;
     position: relative;
@@ -440,15 +457,15 @@ small p:first-child {
   }
 
   #menu a:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 
   #hamburger:checked ~ #menu {
-    transform:translateX(0)
+    transform: translateX(0);
   }
 
   #hamburger:checked ~ #menu::before {
-    transform:translateX(0)
+    transform: translateX(0);
   }
 
   .sp_icon_nav img {
@@ -470,11 +487,13 @@ small p:first-child {
     border: #222 solid 1px;
   }
 
-  #select1, #select2 {
+  #select1,
+  #select2 {
     opacity: 0;
   }
 
-  .select_news , .select_live {
+  .select_news,
+  .select_live {
     width: 50%;
     height: 100%;
     display: inline-block;
@@ -486,8 +505,8 @@ small p:first-child {
   #select1:checked ~ .select_box .select_news,
   #select2:checked ~ .select_box .select_live {
     background: #222;
-    color: rgb(250,250,250);
-    transition: .5s;
+    color: rgb(250, 250, 250);
+    transition: 0.5s;
   }
 
   .border {
@@ -496,12 +515,15 @@ small p:first-child {
     margin: 20px auto;
   }
 
-  .sp_news , .sp_live, .sp_twitter {
+  .sp_news,
+  .sp_live,
+  .sp_twitter {
     width: 95%;
     margin: 10px auto;
   }
 
-  .sp_news td , .sp_live td {
+  .sp_news td,
+  .sp_live td {
     padding: 1rem 0;
     padding-right: 5px;
     font-size: 12px;
@@ -518,8 +540,8 @@ small p:first-child {
 
   .twitter_title {
     background: #222;
-    color: rgb(250,250,250);
-    padding: .7rem 0;
+    color: rgb(250, 250, 250);
+    padding: 0.7rem 0;
     letter-spacing: 3px;
   }
 
@@ -532,9 +554,9 @@ small p:first-child {
     text-align: center;
   }
 
-   .center_name {
+  .center_name {
     font-size: 30px;
-    color: rgb(250,250,250);
+    color: rgb(250, 250, 250);
     animation: fade-in 2s;
     position: absolute;
     z-index: 1;
@@ -550,7 +572,7 @@ small p:first-child {
       opacity: 0;
       transform: translateY(50px);
     }
-  
+
     to {
       opacity: 1;
       transform: translateY(0px);
@@ -566,7 +588,9 @@ small p:first-child {
     width: 100%;
   }
 
-  .content h1, .content h2, .content p{
+  .content h1,
+  .content h2,
+  .content p {
     margin-left: 5%;
   }
 
@@ -580,7 +604,7 @@ small p:first-child {
     border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 2.8rem;
-    padding: 1em 0 .5em 0;
+    padding: 1em 0 0.5em 0;
   }
   /* biography */
 
@@ -594,7 +618,7 @@ small p:first-child {
     border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 8rem;
-    padding: 1em 0 .5em 0;
+    padding: 1em 0 0.5em 0;
   }
 
   /* discography */
@@ -609,7 +633,7 @@ small p:first-child {
     border-bottom: #222 solid 1px;
     letter-spacing: 3px;
     width: 10rem;
-    padding: 1em 0 .5em 0;
+    padding: 1em 0 0.5em 0;
   }
 
   .disco_content {
@@ -623,9 +647,4 @@ small p:first-child {
   .contact_main {
     margin-top: 0px;
   }
-
 }
-
-
-
-
